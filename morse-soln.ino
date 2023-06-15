@@ -57,10 +57,10 @@ void loop() {
   // And create a loop with a range from 0 to the length of the string
   for(int i = 0; i < strlen(string); i++ ) {
     // now we set char to equal the character at the current index
-    char ch = string[i];
+    ch = string[i];
     // Now check if the character is within the range a to z.
     if (ch >= 'a' && ch <= 'z'){
-          // now we find the letter's morse code pattern by subtracting the ascii value of the character from that of the letter 'a'
+          // now we find the letter's morse code pattern by subtracting the ascii value of 'a' from that of the character
           flashCharacter(letters[ch - 'a']);
       } else if (ch == ' ') {
           // if the character is a space wait 4 units of time.
